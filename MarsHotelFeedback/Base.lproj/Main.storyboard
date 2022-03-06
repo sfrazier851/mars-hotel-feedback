@@ -294,7 +294,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exitBG" translatesAutoresizingMaskIntoConstraints="NO" id="cXC-Dc-a9m">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exitScreen/exitBG" translatesAutoresizingMaskIntoConstraints="NO" id="cXC-Dc-a9m">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -315,7 +315,7 @@
                                 <rect key="frame" x="29" y="307" width="71" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="1Star" image="emptyStar"/>
+                                <state key="normal" title="1Star" image="exitScreen/emptyStar"/>
                                 <connections>
                                     <action selector="oneStar:" destination="2go-Lo-yuw" eventType="touchUpInside" id="V9P-wP-qXX"/>
                                 </connections>
@@ -324,7 +324,7 @@
                                 <rect key="frame" x="99" y="307" width="71" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="2Star" image="emptyStar"/>
+                                <state key="normal" title="2Star" image="exitScreen/emptyStar"/>
                                 <connections>
                                     <action selector="twoStar:" destination="2go-Lo-yuw" eventType="touchUpInside" id="xuo-cP-0Fc"/>
                                 </connections>
@@ -333,7 +333,7 @@
                                 <rect key="frame" x="170" y="307" width="73" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="3Star" image="emptyStar"/>
+                                <state key="normal" title="3Star" image="exitScreen/emptyStar"/>
                                 <connections>
                                     <action selector="threeStar:" destination="2go-Lo-yuw" eventType="touchUpInside" id="13I-0h-Ns2"/>
                                 </connections>
@@ -345,14 +345,14 @@
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="5Star">
-                                    <imageReference key="image" image="emptyStar" symbolScale="large"/>
+                                    <imageReference key="image" image="exitScreen/emptyStar" symbolScale="large"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
                                     <action selector="fifthStar:" destination="2go-Lo-yuw" eventType="touchUpInside" id="edg-sr-osJ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="slice8" translatesAutoresizingMaskIntoConstraints="NO" id="ubW-2R-ecT">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exitScreen/slice8" translatesAutoresizingMaskIntoConstraints="NO" id="ubW-2R-ecT">
                                 <rect key="frame" x="113" y="439" width="188" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -367,7 +367,7 @@
                                 <rect key="frame" x="243" y="307" width="72" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="4Star" image="emptyStar"/>
+                                <state key="normal" title="4Star" image="exitScreen/emptyStar"/>
                                 <connections>
                                     <action selector="fourthStar:" destination="2go-Lo-yuw" eventType="touchUpInside" id="3I4-b1-l5O"/>
                                 </connections>
@@ -535,12 +535,12 @@
     </scenes>
     <resources>
         <image name="colony1" width="1600" height="901"/>
-        <image name="emptyStar" width="219" height="229"/>
-        <image name="exitBG" width="5120" height="2880"/>
+        <image name="exitScreen/emptyStar" width="219" height="229"/>
+        <image name="exitScreen/exitBG" width="5120" height="2880"/>
+        <image name="exitScreen/slice8" width="1019" height="1059"/>
         <image name="launchScreen/mars1" width="750" height="1000"/>
         <image name="launchScreen/mars3" width="1050" height="700"/>
         <image name="launchScreen/mars7" width="800" height="960"/>
-        <image name="slice8" width="1019" height="1059"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

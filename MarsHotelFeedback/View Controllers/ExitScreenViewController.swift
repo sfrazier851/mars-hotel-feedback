@@ -45,49 +45,49 @@ class ExitScreenViewController: UIViewController {
         
     }
     @IBAction func oneStar(_ sender: Any) {
-        oneStarImage.setImage(UIImage.init(named: "filledStar"), for: .normal)
-        twoStarImage.setImage(UIImage.init(named: "emptyStar"), for: .normal)
-        threeStarImage.setImage(UIImage.init(named: "emptyStar"), for: .normal)
-        fourStarImage.setImage(UIImage.init(named: "emptyStar"), for: .normal)
-        fifthStarImage.setImage(UIImage.init(named: "emptyStar"), for: .normal)
-        exitEmote.image = UIImage.init(named: "slice6")
+        oneStarImage.setImage(UIImage.init(named: "exitScreen/filledStar"), for: .normal)
+        twoStarImage.setImage(UIImage.init(named: "exitScreen/emptyStar"), for: .normal)
+        threeStarImage.setImage(UIImage.init(named: "exitScreen/emptyStar"), for: .normal)
+        fourStarImage.setImage(UIImage.init(named: "exitScreen/emptyStar"), for: .normal)
+        fifthStarImage.setImage(UIImage.init(named: "exitScreen/emptyStar"), for: .normal)
+        exitEmote.image = UIImage.init(named: "exitScreen/slice6")
         
     }
     
     @IBAction func twoStar(_ sender: Any) {
-        oneStarImage.setImage(UIImage.init(named: "filledStar"), for: .normal)
-        twoStarImage.setImage(UIImage.init(named: "filledStar"), for: .normal)
-        threeStarImage.setImage(UIImage.init(named: "emptyStar"), for: .normal)
-        fourStarImage.setImage(UIImage.init(named: "emptyStar"), for: .normal)
-        fifthStarImage.setImage(UIImage.init(named: "emptyStar"), for: .normal)
-        exitEmote.image = UIImage.init(named: "slice5")
+        oneStarImage.setImage(UIImage.init(named: "exitScreen/filledStar"), for: .normal)
+        twoStarImage.setImage(UIImage.init(named: "exitScreen/filledStar"), for: .normal)
+        threeStarImage.setImage(UIImage.init(named: "exitScreen/emptyStar"), for: .normal)
+        fourStarImage.setImage(UIImage.init(named: "exitScreen/emptyStar"), for: .normal)
+        fifthStarImage.setImage(UIImage.init(named: "exitScreen/emptyStar"), for: .normal)
+        exitEmote.image = UIImage.init(named: "exitScreen/slice5")
     }
     
     @IBAction func threeStar(_ sender: Any) {
-        oneStarImage.setImage(UIImage.init(named: "filledStar"), for: .normal)
-        twoStarImage.setImage(UIImage.init(named: "filledStar"), for: .normal)
-        threeStarImage.setImage(UIImage.init(named: "filledStar"), for: .normal)
-        fourStarImage.setImage(UIImage.init(named: "emptyStar"), for: .normal)
-        fifthStarImage.setImage(UIImage.init(named: "emptyStar"), for: .normal)
-        exitEmote.image = UIImage.init(named: "slice8")
+        oneStarImage.setImage(UIImage.init(named: "exitScreen/filledStar"), for: .normal)
+        twoStarImage.setImage(UIImage.init(named: "exitScreen/filledStar"), for: .normal)
+        threeStarImage.setImage(UIImage.init(named: "exitScreen/filledStar"), for: .normal)
+        fourStarImage.setImage(UIImage.init(named: "exitScreen/emptyStar"), for: .normal)
+        fifthStarImage.setImage(UIImage.init(named: "exitScreen/emptyStar"), for: .normal)
+        exitEmote.image = UIImage.init(named: "exitScreen/slice8")
     }
     
     @IBAction func fourthStar(_ sender: Any) {
-        oneStarImage.setImage(UIImage.init(named: "filledStar"), for: .normal)
-        twoStarImage.setImage(UIImage.init(named: "filledStar"), for: .normal)
-        threeStarImage.setImage(UIImage.init(named: "filledStar"), for: .normal)
-        fourStarImage.setImage(UIImage.init(named: "filledStar"), for: .normal)
-        fifthStarImage.setImage(UIImage.init(named: "emptyStar"), for: .normal)
-        exitEmote.image = UIImage.init(named: "slice4")
+        oneStarImage.setImage(UIImage.init(named: "exitScreen/filledStar"), for: .normal)
+        twoStarImage.setImage(UIImage.init(named: "exitScreen/filledStar"), for: .normal)
+        threeStarImage.setImage(UIImage.init(named: "exitScreen/filledStar"), for: .normal)
+        fourStarImage.setImage(UIImage.init(named: "exitScreen/filledStar"), for: .normal)
+        fifthStarImage.setImage(UIImage.init(named: "exitScreen/emptyStar"), for: .normal)
+        exitEmote.image = UIImage.init(named: "exitScreen/slice4")
     }
     
     @IBAction func fifthStar(_ sender: Any) {
-        oneStarImage.setImage(UIImage.init(named: "filledStar"), for: .normal)
-        twoStarImage.setImage(UIImage.init(named: "filledStar"), for: .normal)
-        threeStarImage.setImage(UIImage.init(named: "filledStar"), for: .normal)
-        fourStarImage.setImage(UIImage.init(named: "filledStar"), for: .normal)
-        fifthStarImage.setImage(UIImage.init(named: "filledStar"), for: .normal)
-        exitEmote.image = UIImage.init(named: "slice10")
+        oneStarImage.setImage(UIImage.init(named: "exitScreen/filledStar"), for: .normal)
+        twoStarImage.setImage(UIImage.init(named: "exitScreen/filledStar"), for: .normal)
+        threeStarImage.setImage(UIImage.init(named: "exitScreen/filledStar"), for: .normal)
+        fourStarImage.setImage(UIImage.init(named: "exitScreen/filledStar"), for: .normal)
+        fifthStarImage.setImage(UIImage.init(named: "exitScreen/filledStar"), for: .normal)
+        exitEmote.image = UIImage.init(named: "exitScreen/slice10")
     }
     
     @IBAction func exitButton(_ sender: Any) {
