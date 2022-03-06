@@ -23,6 +23,7 @@
 		7FC398FE27CDCC3A00D17FC0 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC398FC27CDCC3A00D17FC0 /* User+CoreDataClass.swift */; };
 		7FC398FF27CDCC3A00D17FC0 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC398FD27CDCC3A00D17FC0 /* User+CoreDataProperties.swift */; };
 		7FC3990527CDCE4800D17FC0 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC3990427CDCE4800D17FC0 /* ModelController.swift */; };
+		840BDAD227D54BB300BAC07B /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BDAD127D54BB300BAC07B /* SurveyViewController.swift */; };
 		84D80DB327D3ED2D006E5A1B /* ExitScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D80DB227D3ED2D006E5A1B /* ExitScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		7FC398FC27CDCC3A00D17FC0 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7FC398FD27CDCC3A00D17FC0 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7FC3990427CDCE4800D17FC0 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		840BDAD127D54BB300BAC07B /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		84D80DB227D3ED2D006E5A1B /* ExitScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExitScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 				7FC398CE27CD5B6000D17FC0 /* LoginViewController.swift */,
 				84D80DB227D3ED2D006E5A1B /* ExitScreenViewController.swift */,
 				7FC398D127CD5BC100D17FC0 /* SignUpViewController.swift */,
+				840BDAD127D54BB300BAC07B /* SurveyViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				7FC398CF27CD5B6000D17FC0 /* LoginViewController.swift in Sources */,
 				84D80DB327D3ED2D006E5A1B /* ExitScreenViewController.swift in Sources */,
 				7FC398D227CD5BC100D17FC0 /* SignUpViewController.swift in Sources */,
+				840BDAD227D54BB300BAC07B /* SurveyViewController.swift in Sources */,
 				787D86A127D3EA8C0088D345 /* DataService.swift in Sources */,
 				7FC398CB27CD5B4200D17FC0 /* HomeViewController.swift in Sources */,
 				7FC398F927CDBBD300D17FC0 /* MarsHotelFeedback.xcdatamodeld in Sources */,
