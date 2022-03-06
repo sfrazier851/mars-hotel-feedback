@@ -55,7 +55,7 @@ class LoginViewController: UIViewController {
                 showError("User with email: \(email), doesn't exist.")
             } else {
                 if userToLogin?[0].password == password {
-                    let homeViewController = self.storyboard?.instantiateViewController(identifier: "HomeViewController") as? HomeViewController
+                    let homeViewController = self.storyboard?.instantiateViewController(identifier: "welcomeNavigation") as? UINavigationController
                     
                     self.view.window?.rootViewController = homeViewController
                     self.view.window?.makeKeyAndVisible()

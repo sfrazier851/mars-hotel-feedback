@@ -394,12 +394,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yuV-bg-5yf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3972" y="48"/>
+            <point key="canvasLocation" x="4881.159420289855" y="47.544642857142854"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="H2K-Eu-Np9">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0OS-zk-aDw" customClass="HomeViewController" customModule="CustomLaunchScreen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0OS-zk-aDw" customClass="HomeViewController" customModule="MarsHotelFeedback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wec-Qa-zx8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -420,16 +420,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Welcome"/>
+                                <connections>
+                                    <action selector="welcomePressed:" destination="0OS-zk-aDw" eventType="touchUpInside" id="Fex-uJ-9gB"/>
+                                    <segue destination="tYW-PL-Uif" kind="show" id="hlz-1k-wM4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D9e-vp-U5y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="S69-KN-O8q"/>
+                    <connections>
+                        <outlet property="welcomeButton" destination="6bg-XT-KWx" id="pYW-lV-YBA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="msb-yM-3yp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2151" y="48"/>
+            <point key="canvasLocation" x="3060.8695652173915" y="47.544642857142854"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kBX-xd-64Q">
@@ -451,7 +458,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNF-cz-7nx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3088" y="48"/>
+            <point key="canvasLocation" x="3997.1014492753625" y="47.544642857142854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YG2-db-i9M">
+            <objects>
+                <navigationController storyboardIdentifier="welcomeNavigation" automaticallyAdjustsScrollViewInsets="NO" id="e11-Ue-0aI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7jc-ht-Zlh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0OS-zk-aDw" kind="relationship" relationship="rootViewController" id="9gL-KG-UU0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nri-tg-ex0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2150.7246376811595" y="47.544642857142854"/>
         </scene>
     </scenes>
     <resources>
