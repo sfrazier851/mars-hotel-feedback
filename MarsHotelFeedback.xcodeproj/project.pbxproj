@@ -89,7 +89,6 @@
 				7FC398BC27CD52A600D17FC0 /* Info.plist */,
 				7FC398F727CDBBD300D17FC0 /* MarsHotelFeedback.xcdatamodeld */,
 				787D86A027D3EA8C0088D345 /* DataService.swift */,
-				787D86A227D3F0BF0088D345 /* Question.swift */,
 			);
 			path = MarsHotelFeedback;
 			sourceTree = "<group>";
@@ -120,6 +119,7 @@
 				7FC398FC27CDCC3A00D17FC0 /* User+CoreDataClass.swift */,
 				7FC398FD27CDCC3A00D17FC0 /* User+CoreDataProperties.swift */,
 				7FC3990427CDCE4800D17FC0 /* ModelController.swift */,
+				787D86A227D3F0BF0088D345 /* Question.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
