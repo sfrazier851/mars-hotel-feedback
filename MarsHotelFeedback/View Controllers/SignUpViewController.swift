@@ -34,6 +34,9 @@ class SignUpViewController: UIViewController {
     
         // Hide the error label
         errorLabel.alpha = 0
+        errorLabel.backgroundColor = UIColor(white: 0.0, alpha: 1.0)
+        errorLabel.layer.masksToBounds = true
+        errorLabel.layer.cornerRadius = 10
     
         // Style the elements
         Utilities.styleTextField(firstNameTextField, placeHolderString: "first name")
@@ -61,7 +64,7 @@ class SignUpViewController: UIViewController {
         
         if Utilities.isPasswordValid(cleanedPassword) == false {
             // Password isn't secure enough
-            return "Please make sure your password is at least 8 characters, contains a special character and a number."
+            return "Please make sure your password is at least 8 characters and contains a special character."
         }
         
         return nil

@@ -17,6 +17,7 @@ class Utilities {
         
         bottomLine.backgroundColor = UIColor.init(red: 93/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
         
+        
         let attributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
             .font: UIFont.systemFont(ofSize: 30)

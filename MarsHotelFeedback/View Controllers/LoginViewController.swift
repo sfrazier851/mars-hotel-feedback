@@ -28,6 +28,9 @@ class LoginViewController: UIViewController {
         
         // Hide the error label
         errorLabel.alpha = 0
+        errorLabel.backgroundColor = UIColor(white: 0.0, alpha: 1.0)
+        errorLabel.layer.masksToBounds = true
+        errorLabel.layer.cornerRadius = 5
         
         // Style the elements
         Utilities.styleTextField(emailTextField, placeHolderString: "email")
@@ -50,7 +53,7 @@ class LoginViewController: UIViewController {
         if let userToLoginValue = userToLogin {
             userToLogin = userToLoginValue
             if email == "" || password == "" {
-                showError("Pleae make sure both fields are filled in.")
+                showError("Please make sure both fields are filled in.")
             } else if userToLogin?.count == 0 {
                 showError("User with email: \(email), doesn't exist.")
             } else {
