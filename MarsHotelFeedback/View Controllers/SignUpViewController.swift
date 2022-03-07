@@ -125,6 +125,11 @@ class SignUpViewController: UIViewController {
         
         let loginViewController = self.storyboard?.instantiateViewController(identifier: "loginView") as? LoginViewController
         
+        let transition = CATransition()
+        transition.type = .push
+        transition.duration = 0.25
+        view.window?.layer.add(transition, forKey: kCATransition)
+        
         view.window?.rootViewController = loginViewController
         view.window?.makeKeyAndVisible()
     }
