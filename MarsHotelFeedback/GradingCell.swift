@@ -23,10 +23,11 @@ class GradingCell: UITableViewCell {
     
     @IBOutlet weak var question: UILabel!
      @IBOutlet weak var marsCheck: UIImageView!
-    
-//   checkForUp.isHidden = true
-//    checkForUp.isHidden = true
-//    checkForUp.isHidden = true
+//  MARK: - For addition.
+
+//   Do something to hide check mark when next button tapped..
+//
+//
  
     func checkButton(posX:CGFloat, posY: CGFloat) {
         if marsCheck.isHidden == true {
