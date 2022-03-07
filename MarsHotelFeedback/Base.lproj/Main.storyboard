@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i7C-KE-aDp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i7C-KE-aDp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -419,7 +418,6 @@
                                 <rect key="frame" x="49" y="375" width="321" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Welcome"/>
                                 <connections>
                                     <action selector="welcomePressed:" destination="0OS-zk-aDw" eventType="touchUpInside" id="Fex-uJ-9gB"/>
                                     <segue destination="tYW-PL-Uif" kind="show" id="hlz-1k-wM4"/>
@@ -469,7 +467,6 @@
                                 <rect key="frame" x="47" y="200" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Food"/>
                                 <connections>
                                     <action selector="foodPressed:" destination="tYW-PL-Uif" eventType="touchUpInside" id="uns-Y6-Rcq"/>
                                 </connections>
@@ -478,7 +475,6 @@
                                 <rect key="frame" x="47" y="350" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Room"/>
                                 <connections>
                                     <action selector="roomPressed:" destination="tYW-PL-Uif" eventType="touchUpInside" id="kCd-fe-0sY"/>
                                 </connections>
@@ -487,7 +483,6 @@
                                 <rect key="frame" x="47" y="500" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Gym"/>
                                 <connections>
                                     <action selector="gymPressed:" destination="tYW-PL-Uif" eventType="touchUpInside" id="hg4-Wr-yk7"/>
                                 </connections>
