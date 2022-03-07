@@ -19,9 +19,9 @@ class SurveyViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        Utilities.styleFilledButtonRed(gymButton)
-        Utilities.styleFilledButtonRed(roomButton)
-        Utilities.styleFilledButtonRed(foodButton)
+        Utilities.styleFilledButton(gymButton)
+        Utilities.styleFilledButton(roomButton)
+        Utilities.styleFilledButton(foodButton)
     }
     
 

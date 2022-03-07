@@ -94,7 +94,7 @@ class SignUpViewController: UIViewController {
                 // user does not already exist
                 // Create the user
                 ModelController.createUser(firstName: firstName, lastName: lastName, email: email, password: password)
-                self.transitionToHome()
+                transitionLogin()
             }
             else {
                 // user email already exists
@@ -117,4 +117,13 @@ class SignUpViewController: UIViewController {
         view.window?.makeKeyAndVisible()
      
     }
+    
+    func transitionLogin() {
+        
+        let loginViewController = self.storyboard?.instantiateViewController(identifier: "loginView") as? LoginViewController
+        
+        view.window?.rootViewController = loginViewController
+        view.window?.makeKeyAndVisible()
+    }
+    
 }
