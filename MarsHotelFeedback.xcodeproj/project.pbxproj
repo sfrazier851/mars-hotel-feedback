@@ -89,6 +89,7 @@
 				7FC398AE27CD52A200D17FC0 /* AppDelegate.swift */,
 				7FC3990227CDCC4400D17FC0 /* Model */,
 				7FC398B027CD52A200D17FC0 /* SceneDelegate.swift */,
+				787D86A227D3F0BF0088D345 /* Question.swift */,
 				7FC398C927CD5ADE00D17FC0 /* View Controllers */,
 				7FC398B427CD52A200D17FC0 /* Main.storyboard */,
 				7FC398C727CD5AB100D17FC0 /* Helpers */,
@@ -96,8 +97,7 @@
 				7FC398B927CD52A600D17FC0 /* LaunchScreen.storyboard */,
 				7FC398BC27CD52A600D17FC0 /* Info.plist */,
 				7FC398F727CDBBD300D17FC0 /* MarsHotelFeedback.xcdatamodeld */,
-				787D86A027D3EA8C0088D345 /* DataService.swift */,
-				787D86A227D3F0BF0088D345 /* Question.swift */,
+				84D80DB427D67444006E5A1B /* DataStore */,
 				78F330A727D59B950020C31E /* GradingCell.swift */,
 				78F330A927D59B9B0020C31E /* GradingCell.xib */,
 				78F330AB27D59BCD0020C31E /* SurveyVC.swift */,
@@ -117,11 +117,11 @@
 			isa = PBXGroup;
 			children = (
 				7FC398B227CD52A200D17FC0 /* ViewController.swift */,
-				7FC398CA27CD5B4200D17FC0 /* HomeViewController.swift */,
-				7FC398CE27CD5B6000D17FC0 /* LoginViewController.swift */,
-				84D80DB227D3ED2D006E5A1B /* ExitScreenViewController.swift */,
 				7FC398D127CD5BC100D17FC0 /* SignUpViewController.swift */,
+				7FC398CE27CD5B6000D17FC0 /* LoginViewController.swift */,
+				7FC398CA27CD5B4200D17FC0 /* HomeViewController.swift */,
 				840BDAD127D54BB300BAC07B /* SurveyViewController.swift */,
+				84D80DB227D3ED2D006E5A1B /* ExitScreenViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -134,6 +134,14 @@
 				7FC3990427CDCE4800D17FC0 /* ModelController.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		84D80DB427D67444006E5A1B /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				787D86A027D3EA8C0088D345 /* DataService.swift */,
+			);
+			path = DataStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
