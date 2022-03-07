@@ -20,7 +20,7 @@ class SurveyVC: UIViewController {
 //    var delegate: GoNext?
     var serviceSelected = 0
     
-//  MARK: - To instanciate this class.
+//  MARK: - To instanciate this classwhen called elsewhere.
 //    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 //        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 //    }
@@ -60,14 +60,11 @@ class SurveyVC: UIViewController {
             tableOutlet.backgroundView = UIImageView(image: UIImage(named: getServiceName(choice: serviceSelected)))
             tableOutlet.reloadData()
         } else {
-                //  MARK: - To be interfaced with next screen.
-                //Placeholder: "StarVC"
-               //
-                //            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                //            let nextVC = storyBoard.instantiateViewController(withIdentifier: "StarVC") as! StarVC
-                //
-                //            nextVC.modalPresentationStyle = .fullScreen
-                //            self.present(nextVC, animated: true, completion: nil)
+            
+            //  MARK: - Call next screen.
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let nextVC = storyBoard.instantiateViewController(withIdentifier: "ExitScreenViewController") as! ExitScreenViewController
+             self.navigationController?.pushViewController(nextVC, animated: false)
             }
 
     }
