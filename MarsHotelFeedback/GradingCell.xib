@@ -29,7 +29,11 @@
                         <rect key="frame" x="15" y="50" width="100" height="100"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="filled" image="hand.thumbsup" catalog="system"/>
+                        <buttonConfiguration key="configuration" style="filled">
+                            <backgroundConfiguration key="background" image="hand.thumbsup.fill" catalog="system">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </backgroundConfiguration>
+                        </buttonConfiguration>
                         <connections>
                             <action selector="buttonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="47M-Yd-cMQ"/>
                         </connections>
@@ -38,7 +42,11 @@
                         <rect key="frame" x="165" y="50" width="100" height="100"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="filled" image="face.smiling" catalog="system"/>
+                        <buttonConfiguration key="configuration" style="filled">
+                            <backgroundConfiguration key="background" image="face.smiling.fill" catalog="system">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </backgroundConfiguration>
+                        </buttonConfiguration>
                         <connections>
                             <action selector="buttonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uPm-uB-ccF"/>
                         </connections>
@@ -47,7 +55,11 @@
                         <rect key="frame" x="315" y="50" width="100" height="100"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="filled" image="hand.thumbsdown" catalog="system"/>
+                        <buttonConfiguration key="configuration" style="filled">
+                            <backgroundConfiguration key="background" image="hand.thumbsdown.fill" catalog="system">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </backgroundConfiguration>
+                        </buttonConfiguration>
                         <connections>
                             <action selector="buttonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pEm-Cz-EoJ"/>
                         </connections>
@@ -69,9 +81,9 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="face.smiling" catalog="system" width="128" height="121"/>
-        <image name="hand.thumbsdown" catalog="system" width="128" height="128"/>
-        <image name="hand.thumbsup" catalog="system" width="128" height="128"/>
+        <image name="face.smiling.fill" catalog="system" width="128" height="121"/>
+        <image name="hand.thumbsdown.fill" catalog="system" width="128" height="121"/>
+        <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
         <image name="mars_check" width="64" height="64"/>
     </resources>
 </document>

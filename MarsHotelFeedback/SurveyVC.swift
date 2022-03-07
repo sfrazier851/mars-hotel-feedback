@@ -94,6 +94,7 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
         //                cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         //        }
         //        cell.delegate = self
+    cell.marsCheck.isHidden = true
         return cell
     }
     
