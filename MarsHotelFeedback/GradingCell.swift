@@ -22,19 +22,17 @@ class GradingCell: UITableViewCell {
     }
     
     @IBOutlet weak var question: UILabel!
-     @IBOutlet weak var checkForUp: UIImageView!
-    @IBOutlet weak var checkForSmile: UIImageView!
-    @IBOutlet weak var checkForDown: UIImageView!
+     @IBOutlet weak var marsCheck: UIImageView!
     
 //   checkForUp.isHidden = true
 //    checkForUp.isHidden = true
 //    checkForUp.isHidden = true
  
     func checkButton(posX:CGFloat, posY: CGFloat) {
-        if checkForUp.isHidden == true {
-            checkForUp.isHidden = false}
-            checkForUp.frame.origin.x = posX
-            checkForUp.frame.origin.y = posY
+        if marsCheck.isHidden == true {
+            marsCheck.isHidden = false}
+        marsCheck.frame.origin.x = posX
+        marsCheck.frame.origin.y = posY
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
