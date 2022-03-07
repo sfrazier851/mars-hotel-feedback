@@ -418,7 +418,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bg-XT-KWx">
                                 <rect key="frame" x="49" y="375" width="321" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Welcome"/>
                                 <connections>
                                     <action selector="welcomePressed:" destination="0OS-zk-aDw" eventType="touchUpInside" id="Fex-uJ-9gB"/>
                                     <segue destination="tYW-PL-Uif" kind="show" id="hlz-1k-wM4"/>
@@ -467,7 +467,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ta6-5Z-CV7">
                                 <rect key="frame" x="47" y="200" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Food"/>
                                 <connections>
                                     <action selector="foodPressed:" destination="tYW-PL-Uif" eventType="touchUpInside" id="uns-Y6-Rcq"/>
                                 </connections>
@@ -475,7 +475,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1I-sY-Tm9">
                                 <rect key="frame" x="47" y="350" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Room"/>
                                 <connections>
                                     <action selector="roomPressed:" destination="tYW-PL-Uif" eventType="touchUpInside" id="kCd-fe-0sY"/>
                                 </connections>
@@ -483,9 +483,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1UJ-kv-YQe">
                                 <rect key="frame" x="47" y="500" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Gym"/>
                                 <connections>
                                     <action selector="gymPressed:" destination="tYW-PL-Uif" eventType="touchUpInside" id="hg4-Wr-yk7"/>
+                                    <segue destination="2go-Lo-yuw" kind="show" id="9tm-Gz-Vty"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rate our Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhl-qs-AU5">
