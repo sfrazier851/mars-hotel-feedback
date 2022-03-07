@@ -16,7 +16,8 @@ class SurveyVC: UIViewController {
 
     @IBOutlet weak var serviceTitle: UILabel!
     @IBOutlet weak var tableOutlet: UITableView!
-//  MARK: - For voice recognition.
+    @IBOutlet weak var nextButton: UIButton!
+        //  MARK: - For voice recognition.
 //    var delegate: GoNext?
     var serviceSelected = 0
     
@@ -41,6 +42,7 @@ class SurveyVC: UIViewController {
         tableOutlet.backgroundView = UIImageView(image: UIImage(named: getServiceName(choice: serviceSelected)))
         
         self.serviceTitle.text = getCapitalizedServiceName(Choice: serviceSelected)
+        Utilities.styleFilledButton(nextButton)
     }
     
     func getServiceName(choice : Int) -> String {
