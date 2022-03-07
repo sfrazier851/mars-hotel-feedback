@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		787D86A127D3EA8C0088D345 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D86A027D3EA8C0088D345 /* DataService.swift */; };
 		787D86A327D3F0BF0088D345 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D86A227D3F0BF0088D345 /* Question.swift */; };
+		78F330A827D59B950020C31E /* GradingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F330A727D59B950020C31E /* GradingCell.swift */; };
+		78F330AA27D59B9B0020C31E /* GradingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78F330A927D59B9B0020C31E /* GradingCell.xib */; };
+		78F330AC27D59BCD0020C31E /* SurveyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F330AB27D59BCD0020C31E /* SurveyVC.swift */; };
 		7FC398AF27CD52A200D17FC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC398AE27CD52A200D17FC0 /* AppDelegate.swift */; };
 		7FC398B127CD52A200D17FC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC398B027CD52A200D17FC0 /* SceneDelegate.swift */; };
 		7FC398B327CD52A200D17FC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC398B227CD52A200D17FC0 /* ViewController.swift */; };
@@ -30,6 +33,9 @@
 /* Begin PBXFileReference section */
 		787D86A027D3EA8C0088D345 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		787D86A227D3F0BF0088D345 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		78F330A727D59B950020C31E /* GradingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradingCell.swift; sourceTree = "<group>"; };
+		78F330A927D59B9B0020C31E /* GradingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GradingCell.xib; sourceTree = "<group>"; };
+		78F330AB27D59BCD0020C31E /* SurveyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyVC.swift; sourceTree = "<group>"; };
 		7FC398AB27CD52A200D17FC0 /* MarsHotelFeedback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsHotelFeedback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC398AE27CD52A200D17FC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FC398B027CD52A200D17FC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +98,9 @@
 				7FC398F727CDBBD300D17FC0 /* MarsHotelFeedback.xcdatamodeld */,
 				787D86A027D3EA8C0088D345 /* DataService.swift */,
 				787D86A227D3F0BF0088D345 /* Question.swift */,
+				78F330A727D59B950020C31E /* GradingCell.swift */,
+				78F330A927D59B9B0020C31E /* GradingCell.xib */,
+				78F330AB27D59BCD0020C31E /* SurveyVC.swift */,
 			);
 			path = MarsHotelFeedback;
 			sourceTree = "<group>";
@@ -184,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78F330AA27D59B9B0020C31E /* GradingCell.xib in Resources */,
 				7FC398BB27CD52A600D17FC0 /* LaunchScreen.storyboard in Resources */,
 				7FC398B827CD52A600D17FC0 /* Assets.xcassets in Resources */,
 				7FC398B627CD52A200D17FC0 /* Main.storyboard in Resources */,
@@ -205,12 +215,14 @@
 				787D86A127D3EA8C0088D345 /* DataService.swift in Sources */,
 				7FC398CB27CD5B4200D17FC0 /* HomeViewController.swift in Sources */,
 				7FC398F927CDBBD300D17FC0 /* MarsHotelFeedback.xcdatamodeld in Sources */,
+				78F330A827D59B950020C31E /* GradingCell.swift in Sources */,
 				7FC398B327CD52A200D17FC0 /* ViewController.swift in Sources */,
 				7FC398FE27CDCC3A00D17FC0 /* User+CoreDataClass.swift in Sources */,
 				787D86A327D3F0BF0088D345 /* Question.swift in Sources */,
 				7FC398AF27CD52A200D17FC0 /* AppDelegate.swift in Sources */,
 				7FC398B127CD52A200D17FC0 /* SceneDelegate.swift in Sources */,
 				7FC398FF27CDCC3A00D17FC0 /* User+CoreDataProperties.swift in Sources */,
+				78F330AC27D59BCD0020C31E /* SurveyVC.swift in Sources */,
 				7FC398C527CD5A7300D17FC0 /* Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
