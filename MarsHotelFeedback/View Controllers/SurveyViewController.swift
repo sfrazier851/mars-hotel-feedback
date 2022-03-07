@@ -30,7 +30,7 @@ class SurveyViewController: UIViewController {
         let nextVC = storyBoard.instantiateViewController(withIdentifier: "SurveyVC") as! SurveyVC
 
         self.navigationController?.pushViewController(nextVC, animated: false)
-        nextVC.serviceSelected = 1
+        nextVC.userType = 1
 
 
     }
@@ -40,7 +40,7 @@ class SurveyViewController: UIViewController {
         let nextVC = storyBoard.instantiateViewController(withIdentifier: "SurveyVC") as! SurveyVC
 
         self.navigationController?.pushViewController(nextVC, animated: false)
-        nextVC.serviceSelected = 0
+        nextVC.userType = 0
 
 
     }
@@ -49,7 +49,7 @@ class SurveyViewController: UIViewController {
         let nextVC = storyBoard.instantiateViewController(withIdentifier: "SurveyVC") as! SurveyVC
 
         self.navigationController?.pushViewController(nextVC, animated: false)
-        nextVC.serviceSelected = 2
+        nextVC.userType = 2
 
 
     }

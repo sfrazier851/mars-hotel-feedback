@@ -19,6 +19,7 @@ class SurveyVC: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
         //  MARK: - For voice recognition.
 //    var delegate: GoNext?
+    var userType = 0
     var serviceSelected = 0
     
 //  MARK: - To instanciate this classwhen called elsewhere.
