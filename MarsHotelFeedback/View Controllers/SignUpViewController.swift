@@ -59,10 +59,18 @@ class SignUpViewController: UIViewController {
             return "Please make sure email and password fields are filled in."
         }
         
+        //Check if the email is a valid email
+        let cleanedEmail = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if Utilities.isValidEmail(email: cleanedEmail) == false {
+            // email isn't proper format
+            return "Please make sure your email is formatted correctly."
+        }
+        
         // Check if the password is secure
         let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
-        if Utilities.isPasswordValid(cleanedPassword) == false {
+        if Utilities.isValidPassword(cleanedPassword) == false {
             // Password isn't secure enough
             return "Please make sure your password is at least 8 characters and contains a special character."
         }
