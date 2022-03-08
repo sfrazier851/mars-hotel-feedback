@@ -304,13 +304,13 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Submit and Exit"/>
+                                <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="exitButton:" destination="2go-Lo-yuw" eventType="touchUpInside" id="fDN-Mw-834"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1Y-tk-Fld">
-                                <rect key="frame" x="29" y="307" width="71" height="70"/>
+                                <rect key="frame" x="29" y="195" width="71" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="1Star" image="exitScreen/emptyStar"/>
@@ -319,7 +319,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGc-q0-4hY">
-                                <rect key="frame" x="99" y="307" width="71" height="70"/>
+                                <rect key="frame" x="99" y="195" width="71" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="2Star" image="exitScreen/emptyStar"/>
@@ -328,7 +328,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJb-dg-OUW">
-                                <rect key="frame" x="170" y="307" width="73" height="70"/>
+                                <rect key="frame" x="170" y="195" width="73" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="3Star" image="exitScreen/emptyStar"/>
@@ -336,8 +336,17 @@
                                     <action selector="threeStar:" destination="2go-Lo-yuw" eventType="touchUpInside" id="13I-0h-Ns2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R7-w5-QNO">
+                                <rect key="frame" x="243" y="195" width="72" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="4Star" image="exitScreen/emptyStar"/>
+                                <connections>
+                                    <action selector="fourthStar:" destination="2go-Lo-yuw" eventType="touchUpInside" id="3I4-b1-l5O"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQX-xn-jnV">
-                                <rect key="frame" x="314" y="307" width="71" height="70"/>
+                                <rect key="frame" x="314" y="195" width="71" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -351,25 +360,39 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exitScreen/slice8" translatesAutoresizingMaskIntoConstraints="NO" id="ubW-2R-ecT">
-                                <rect key="frame" x="113" y="439" width="188" height="137"/>
+                                <rect key="frame" x="20" y="273" width="365" height="319"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLO-2q-Ij3">
+                                <rect key="frame" x="29" y="74" width="365" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How would you rate your Overall experience? " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzp-yD-Zkv">
-                                <rect key="frame" x="29" y="174" width="356" height="113"/>
+                                <rect key="frame" x="38" y="74" width="356" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
-                                <color key="textColor" systemColor="tintColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R7-w5-QNO">
-                                <rect key="frame" x="243" y="307" width="72" height="70"/>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exitScreen/slice4" translatesAutoresizingMaskIntoConstraints="NO" id="tuy-Ra-d9b">
+                                <rect key="frame" x="0.0" y="323" width="181" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="4Star" image="exitScreen/emptyStar"/>
-                                <connections>
-                                    <action selector="fourthStar:" destination="2go-Lo-yuw" eventType="touchUpInside" id="3I4-b1-l5O"/>
-                                </connections>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sK3-IO-k29">
+                                <rect key="frame" x="170" y="327" width="235" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you for your Feedback! Please use promocode SPACE10 for 10% off your next visit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2A-Sf-jdC">
+                                <rect key="frame" x="181" y="323" width="213" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ks0-fs-4mX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -380,12 +403,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="kRk-m3-zgd"/>
                     <connections>
+                        <outlet property="backgroundButton" destination="JLO-2q-Ij3" id="Rkw-EN-U5X"/>
+                        <outlet property="backgroundButton2" destination="sK3-IO-k29" id="Cqh-Sr-w4V"/>
                         <outlet property="exitButtonStyle" destination="Cev-2N-9ae" id="oyz-jK-UfS"/>
                         <outlet property="exitEmote" destination="ubW-2R-ecT" id="JD2-XA-1OO"/>
                         <outlet property="exitLabel" destination="Qzp-yD-Zkv" id="MrO-7T-63o"/>
                         <outlet property="fifthStarImage" destination="CQX-xn-jnV" id="HQt-bp-Ass"/>
                         <outlet property="fourStarImage" destination="6R7-w5-QNO" id="ozI-od-gc6"/>
                         <outlet property="oneStarImage" destination="I1Y-tk-Fld" id="WdQ-oU-b6t"/>
+                        <outlet property="promoEmote" destination="tuy-Ra-d9b" id="ZXw-cm-gGS"/>
+                        <outlet property="promoLabel" destination="T2A-Sf-jdC" id="EBH-Md-kX1"/>
                         <outlet property="threeStarImage" destination="aJb-dg-OUW" id="jZv-hb-sdE"/>
                         <outlet property="twoStarImage" destination="wGc-q0-4hY" id="6AX-qf-SOb"/>
                     </connections>
@@ -624,6 +651,7 @@
         <image name="colony1" width="1600" height="901"/>
         <image name="exitScreen/emptyStar" width="219" height="229"/>
         <image name="exitScreen/exitBG" width="5120" height="2880"/>
+        <image name="exitScreen/slice4" width="1019" height="1060"/>
         <image name="exitScreen/slice8" width="1019" height="1059"/>
         <image name="launchScreen/mars1" width="750" height="1000"/>
         <image name="launchScreen/mars3" width="1050" height="700"/>

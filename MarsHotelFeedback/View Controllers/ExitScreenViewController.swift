@@ -9,7 +9,7 @@ import UIKit
 
 class ExitScreenViewController: UIViewController {
     
-    
+    var exitCount = 0
 
     @IBOutlet weak var exitLabel: UILabel!
     
@@ -27,6 +27,14 @@ class ExitScreenViewController: UIViewController {
     
     @IBOutlet weak var fifthStarImage: UIButton!
     
+    @IBOutlet weak var backgroundButton: UIButton!
+    
+    @IBOutlet weak var backgroundButton2: UIButton!
+    
+    @IBOutlet weak var promoLabel: UILabel!
+    
+    @IBOutlet weak var promoEmote: UIImageView!
+    
     
     
     
@@ -40,8 +48,11 @@ class ExitScreenViewController: UIViewController {
         
         // Style the elements
         
-        
+        Utilities.styleFilledButton(backgroundButton)
+        Utilities.styleFilledButton(backgroundButton2)
         Utilities.styleFilledButton(exitButtonStyle)
+        backgroundButton.setTitle("", for: .normal)
+        backgroundButton2.setTitle("", for: .normal)
         
     }
     @IBAction func oneStar(_ sender: Any) {
@@ -91,6 +102,23 @@ class ExitScreenViewController: UIViewController {
     }
     
     @IBAction func exitButton(_ sender: Any) {
+        oneStarImage.isHidden = true
+        twoStarImage.isHidden = true
+        threeStarImage.isHidden = true
+        fourStarImage.isHidden = true
+        fifthStarImage.isHidden = true
+        exitEmote.isHidden = true
+        exitLabel.isHidden = true
+        backgroundButton.isHidden = true
+        exitButtonStyle.setTitle("Exit", for: .normal)
+        backgroundButton2.isHidden = false
+        promoLabel.isHidden = false
+        promoEmote.isHidden = false
+        exitCount += 1
+        if exitCount == 2 {
+            exit(0)
+        }
+        
     }
     
     
