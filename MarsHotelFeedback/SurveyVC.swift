@@ -77,6 +77,10 @@ class SurveyVC: UIViewController {
     }
     
     @IBAction func nextAction(_ sender: Any) {
+        if DataService.currentSurveyType == 1 {
+            nextButton.setTitle("Submit", for: .normal)
+        }
+            
         callNext()
         DataService.currentSurveyType += 1
         }
