@@ -12,6 +12,9 @@ class DataService {
     
     private let divisions = ["room", "restaurant", "gym"]
     
+    static var currentSurveyType: Int = 0
+    
+ // MARK - Depricated, can be used for CV cell in TV cell.
     private let gradeImages = [
         "hand.thumbsup",
         "face.smiling",

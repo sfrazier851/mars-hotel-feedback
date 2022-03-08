@@ -20,9 +20,9 @@ class SurveyVC: UIViewController {
         //  MARK: - For voice recognition.
 //    var delegate: GoNext?
     var userType = 0
-    var serviceSelected = 0
+    var surveyType = 0
     
-//  MARK: - To instanciate this classwhen called elsewhere.
+//  MARK: - To instanciate this class when called from elsewhere.
 //    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 //        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 //    }
@@ -34,15 +34,19 @@ class SurveyVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        surveyType = userType
         tableOutlet.register(UINib(nibName: "GradingCell", bundle: nil), forCellReuseIdentifier:  "GradingCell")
 //  MARK: - For future reference to compare.
 //        tableView.register(GradingCell.nib(), forCellReuseIdentifier: GradingCell.identifier)
         tableOutlet.delegate = self
         tableOutlet.dataSource = self
         tableOutlet.estimatedRowHeight = 145
-        tableOutlet.backgroundView = UIImageView(image: UIImage(named: getServiceName(choice: serviceSelected)))
+        tableOutlet.backgroundView = UIImageView(image: UIImage(named: getServiceName(choice: surveyType)))
         
-        self.serviceTitle.text = getCapitalizedServiceName(Choice: serviceSelected)
+        self.serviceTitle.text = getCapitalizedServiceName(Choice: surveyType)
+        if (surveyType == 2 || userType != 0) {
+            nextButton.setTitle("Submit", for: .normal)
+        }
         Utilities.styleFilledButton(nextButton)
     }
     
@@ -55,12 +59,12 @@ class SurveyVC: UIViewController {
     }
     
     func callNext() {
-//  MARK: - For future reference.
-//        self.delegate?.callNext()
-        if serviceSelected < 2 {
-            serviceSelected += 1
-            self.serviceTitle.text = getCapitalizedServiceName(Choice: serviceSelected)
-            tableOutlet.backgroundView = UIImageView(image: UIImage(named: getServiceName(choice: serviceSelected)))
+        surveyType = DataService.currentSurveyType
+        
+        if (userType == 0 && surveyType < 2) {
+            surveyType += 1
+            self.serviceTitle.text = getCapitalizedServiceName(Choice: surveyType)
+            tableOutlet.backgroundView = UIImageView(image: UIImage(named: getServiceName(choice: surveyType)))
             tableOutlet.reloadData()
         } else {
             
@@ -74,6 +78,7 @@ class SurveyVC: UIViewController {
     
     @IBAction func nextAction(_ sender: Any) {
         callNext()
+        DataService.currentSurveyType += 1
         }
     }
 
@@ -88,13 +93,14 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
             as? GradingCell else {
                     fatalError("Unable to create survey table view cell")
         }
-         cell.question?.text = DataService.instance.getQuestions(division: DataService.instance.getDivision(seq: serviceSelected))[indexPath.row].questionAsked
-        //  MARK: - For future reference to compare.
+    
+        //  MARK: - For future reference to unwrapping ways.
         //    var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         //            if cell == nil  {
         //                cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         //        }
         //        cell.delegate = self
+    cell.question?.text = DataService.instance.getQuestions(division: DataService.instance.getDivision(seq: surveyType))[indexPath.row].questionAsked
     cell.marsCheck.isHidden = true
         return cell
     }
