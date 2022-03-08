@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -59,7 +58,6 @@
                         <buttonConfiguration key="configuration" style="filled">
                             <backgroundConfiguration key="background" image="hand.thumbsdown.fill" catalog="system">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="strokeColor" name="AccentColor"/>
                             </backgroundConfiguration>
                         </buttonConfiguration>
                         <connections>
@@ -87,8 +85,5 @@
         <image name="hand.thumbsdown.fill" catalog="system" width="128" height="121"/>
         <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
         <image name="mars_check" width="64" height="64"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
     </resources>
 </document>
