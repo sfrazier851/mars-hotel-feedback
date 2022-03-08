@@ -109,6 +109,7 @@ class ExitScreenViewController: UIViewController {
         fifthStarImage.isHidden = true
         exitEmote.isHidden = true
         exitLabel.isHidden = true
+        backgroundButton.isHidden = true
         exitButtonStyle.setTitle("Exit", for: .normal)
         backgroundButton2.isHidden = false
         promoLabel.isHidden = false
