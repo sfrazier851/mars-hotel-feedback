@@ -8,7 +8,21 @@ import UIKit
 
 class Utilities {
     
+    static func isValidPassword(_ password : String) -> Bool {
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
+        return passwordTest.evaluate(with: password)
+    }
+    
+    static func isValidEmail(email: String) -> Bool {
+        let emailTest = NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}")
+        return emailTest.evaluate(with: email)
+    }
+    
+    // UITextField with black background, white text and red cursor
     static func styleTextField(_ textfield:UITextField, placeHolderString:String) {
+        
+        // disable auto capitalize first letter
+        textfield.autocapitalizationType = .none
         
         // Create the bottom line
         let bottomLine = CALayer()
@@ -34,6 +48,8 @@ class Utilities {
         //white.withAlphaComponent(CGFloat(0.75))
         textfield.font = UIFont(name: "Bold", size: 45)
         textfield.textColor = UIColor.white
+        // set the cursor color
+        textfield.tintColor = UIColor.systemRed
         
         // Add the line to the text field
         textfield.layer.addSublayer(bottomLine)
@@ -79,16 +95,4 @@ class Utilities {
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
         button.tintColor = UIColor.black
     }
-    
-    static func isValidPassword(_ password : String) -> Bool {
-        
-        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
-        return passwordTest.evaluate(with: password)
-    }
-    
-    static func isValidEmail(email: String) -> Bool {
-        let emailTest = NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}")
-        return emailTest.evaluate(with: email)
-    }
-    
 }

@@ -25,9 +25,10 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
         setUpElements()
+        // Place cursor in email textfield
+        emailTextField.becomeFirstResponder()
     }
     
     func setUpElements() {
