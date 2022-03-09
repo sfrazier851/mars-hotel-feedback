@@ -116,12 +116,22 @@ class ExitScreenViewController: UIViewController {
         promoEmote.isHidden = false
         exitCount += 1
         if exitCount == 2 {
-            exit(0)
+           transitionStart()
         }
-        
     }
     
-    
+    func transitionStart() {
+        
+        let startViewController = self.storyboard?.instantiateViewController(identifier: "startView") as? UINavigationController
+        
+        let transition = CATransition()
+        transition.type = .push
+        transition.duration = 0.25
+        view.window?.layer.add(transition, forKey: kCATransition)
+        
+        view.window?.rootViewController = startViewController
+        view.window?.makeKeyAndVisible()
+    }
 
     /*
     // MARK: - Navigation
