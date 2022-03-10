@@ -105,7 +105,7 @@ class SurveyVC: UIViewController {
             DataService.numberOfAnswered = 0
             goNext()
         } else {
-            popIncompleteAlert(title: "Could you rate all three?", message: "", options: "Yes", "No") {(option) in
+            popIncompleteAlert(title: "Open questions", message: "Could you rate all three?", options: "Yes", "No") {(option) in
                     switch(option) {
                         case 0:
                             return
