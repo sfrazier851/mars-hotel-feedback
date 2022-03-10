@@ -82,7 +82,7 @@ class SurveyVC: UIViewController {
         DataService.currentSurveyType += 1
     }
     
-    func popIncompleteAlert(title: String, message: String, options: String..., completion: @escaping (Int) -> Void) {
+    func popIncompleteAlert(title: String,  message:  String,  options: String..., completion: @escaping (Int) -> Void) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
 //        for (index, option) in options.enumerated() {
 //            alertController.addAction(UIAlertAction.init(title: option, style: .default, handler: { (action) in
@@ -105,7 +105,7 @@ class SurveyVC: UIViewController {
             DataService.numberOfAnswered = 0
             goNext()
         } else {
-            popIncompleteAlert(title: "Open questions", message: "Could you rate all three?", options: "Yes", "No") {(option) in
+            popIncompleteAlert(title: "Open Question(s)",  message: "Could you rate all three?", options: "Yes", "No") {(option) in
                     switch(option) {
                         case 0:
                             return
