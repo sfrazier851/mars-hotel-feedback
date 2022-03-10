@@ -14,6 +14,8 @@ class DataService {
     
     static var currentSurveyType: Int = 0
     
+    static var numberOfAnswered = 0
+    
  // MARK - Depricated, can be used for CV cell in TV cell.
     private let gradeImages = [
         "hand.thumbsup",

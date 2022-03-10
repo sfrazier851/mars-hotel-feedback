@@ -67,22 +67,56 @@ class SurveyVC: UIViewController {
             tableOutlet.backgroundView = UIImageView(image: UIImage(named: getServiceName(choice: surveyType)))
             tableOutlet.reloadData()
         } else {
-            
-            //  MARK: - Call next screen.
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let nextVC = storyBoard.instantiateViewController(withIdentifier: "ExitScreenViewController") as! ExitScreenViewController
              self.navigationController?.pushViewController(nextVC, animated: false)
             }
-
     }
     
-    @IBAction func nextAction(_ sender: Any) {
+    func goNext() {
         if DataService.currentSurveyType == 1 {
             nextButton.setTitle("Submit", for: .normal)
         }
             
         callNext()
         DataService.currentSurveyType += 1
+    }
+    
+    func popIncompleteAlert(title: String, message: String, options: String..., completion: @escaping (Int) -> Void) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+//        for (index, option) in options.enumerated() {
+//            alertController.addAction(UIAlertAction.init(title: option, style: .default, handler: { (action) in
+//                completion(index)
+//            }))
+                alertController.addAction(UIAlertAction.init(title: "Yes", style: .default, handler: { (action) in
+                    completion(0)
+                }))
+                    alertController.addAction(UIAlertAction.init(title: "No", style: .destructive, handler: { (action) in
+                        completion(1)
+                    }))
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+
+    
+    @IBAction func nextAction(_ sender: Any) {
+        let numberOfAnswered =  DataService.numberOfAnswered
+        if numberOfAnswered >= 3  {
+            DataService.numberOfAnswered = 0
+            goNext()
+        } else {
+            popIncompleteAlert(title: "Could you rate all three?", message: "", options: "Yes", "No") {(option) in
+                    switch(option) {
+                        case 0:
+                            return
+                        case 1:
+                            DataService.numberOfAnswered = 0
+                            self.goNext()
+                        default:
+                            break
+                    }
+                }
+            }
         }
     }
 

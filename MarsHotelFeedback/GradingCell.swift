@@ -26,7 +26,9 @@ class GradingCell: UITableViewCell {
 
     func checkButton(posX:CGFloat, posY: CGFloat) {
         if marsCheck.isHidden == true {
-            marsCheck.isHidden = false}
+            marsCheck.isHidden = false
+            DataService.numberOfAnswered += 1
+        }
         marsCheck.frame.origin.x = posX
         marsCheck.frame.origin.y = posY
     }
