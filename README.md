@@ -21,10 +21,10 @@
 ###### Loading, Initial, SignUp, Login (Spencer Frazier)
 
 <p float="left">
-<img src="https://user-images.githubusercontent.com/99767638/165222268-c65689a9-ab30-4666-a750-b549306f3689.png" width="180" height="360"/>
-<img src="https://user-images.githubusercontent.com/99767638/165222282-29a38ae6-d7e0-4218-8958-f59fa6762c50.png" width="180" height="360"/>
-<img src="https://user-images.githubusercontent.com/99767638/165222291-cea197e2-8767-4010-acce-926317f806e6.png" width="180" height="360"/>
-<img src="https://user-images.githubusercontent.com/99767638/165222295-c805513f-48ab-4500-aeaa-b62324467ee7.png" width="180" height="360"/>
+<kbd><img src="https://user-images.githubusercontent.com/99767638/165222268-c65689a9-ab30-4666-a750-b549306f3689.png" width="180" height="360"/></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/99767638/165222282-29a38ae6-d7e0-4218-8958-f59fa6762c50.png" width="180" height="360"/></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/99767638/165222291-cea197e2-8767-4010-acce-926317f806e6.png" width="180" height="360"/></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/99767638/165222295-c805513f-48ab-4500-aeaa-b62324467ee7.png" width="180" height="360"/></kbd>
 </p>
 
 ###### Welcome, Selection (Matt Parker)
@@ -37,16 +37,16 @@
 ###### Room Rating, Food Rating, Gym Rating (Young Jin Ju)
 
 <p float="left">
-<img src="https://user-images.githubusercontent.com/99767638/165222313-aec5ccf5-c7c9-449a-86a4-d1eaf472db6b.png" width="180" height="360"/>
-<img src="https://user-images.githubusercontent.com/99767638/165222398-1f4fcdeb-0cf8-441f-abb6-b5fa4a4f58ea.png" width="180" height="360"/>
-<img src="https://user-images.githubusercontent.com/99767638/165222407-52850f10-6992-442d-995b-1e49ab1ef7a3.png" width="180" height="360"/>
+<kbd><img src="https://user-images.githubusercontent.com/99767638/165222313-aec5ccf5-c7c9-449a-86a4-d1eaf472db6b.png" width="180" height="360"/></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/99767638/165222398-1f4fcdeb-0cf8-441f-abb6-b5fa4a4f58ea.png" width="180" height="360"/></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/99767638/165222407-52850f10-6992-442d-995b-1e49ab1ef7a3.png" width="180" height="360"/></kbd>
 </p>
 
 ###### Overall Star Rating, Exit with Discount Code (Clarke Williford)
 
 <p float="left">
-<img src="https://user-images.githubusercontent.com/99767638/165222436-c2c678d8-5667-48f3-a0d1-e9c6b79302a3.png" width="180" height="360"/>
-<img src="https://user-images.githubusercontent.com/99767638/165222457-7707dbbb-2e10-4667-80cc-ded85a356d39.png" width="180" height="360"/>
+<kbd><img src="https://user-images.githubusercontent.com/99767638/165222436-c2c678d8-5667-48f3-a0d1-e9c6b79302a3.png" width="180" height="360"/></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/99767638/165222457-7707dbbb-2e10-4667-80cc-ded85a356d39.png" width="180" height="360"/></kbd>
 </p>
 
 ## Contributors by role:
