@@ -15,7 +15,7 @@
 
 ## Screenshots
 
-###### Logo:
+###### Logo/AppIcon:
 <img src="https://user-images.githubusercontent.com/99767638/165222259-18e5f0ab-3ccc-4fa9-bff4-528c134a6df3.jpg" width="75" height="75"/>
 
 ###### Loading, Initial, SignUp, Login (Spencer Frazier)
